@@ -5,14 +5,18 @@
   "author": "Rotem Weiss",
   "dependencies": {
     "worthy-applitools": "3.5.15",
-    "worthy-selenium-webdriver": "^1.0.7"
+    "worthy-selenium-webdriver": "^1.0.11"
   },
   "devDependencies": {
     "@types/chai": "^4.2.16",
-    "chai": "^4.3.4",
     "@types/mocha": "^8.2.2",
+    "chai": "^4.3.4",
+    "chromedriver": "^95.0.0",
     "mocha": "^8.3.2",
     "worthy-applitools": "3.5.15",
-    "worthy-selenium-webdriver": "^1.0.7"
+    "worthy-selenium-webdriver": "^1.0.11"
+  },
+  "scripts": {
+    "automationTest": "./node_modules/mocha/bin/mocha -r esm -r ts-node/register Tests/*.test.ts --timeout 200000"
   }
 }

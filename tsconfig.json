@@ -1,0 +1,21 @@
+{
+    "include": [
+        "./src/*.ts",
+        "./src/**/*.ts"
+    ],
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "esnext",
+        "lib": [
+            "es2017",
+            "ES6",
+            "dom"
+        ],
+        "noImplicitAny": false,
+        "removeComments": true,
+        "inlineSourceMap": true,
+        "moduleResolution": "node",
+        "outDir": "./dist",
+        "declaration": true
+    }
+}
