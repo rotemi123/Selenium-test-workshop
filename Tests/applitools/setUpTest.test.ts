@@ -42,7 +42,6 @@ beforeEach(async () => {
 })
 
 afterEach(async () => {
-    console.log("rotem")
     await eyesActions.closeEyes();
     await printUrlOfTestResult(runner, eyes.getBatch().getName());
     await eyesActions.abortEyes();

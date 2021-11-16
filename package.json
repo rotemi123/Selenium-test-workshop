@@ -18,7 +18,6 @@
   },
   "scripts": {
     "automationTest": "./node_modules/mocha/bin/mocha -r esm -r ts-node/register Tests/*.test.ts --timeout 200000",
-
     "applitoolsTest": "./node_modules/mocha/bin/mocha -r esm -r ts-node/register -r @applitools/eyes-selenium Tests/applitools/*Test.ts --timeout 200000"
   }
 }
